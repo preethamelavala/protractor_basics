@@ -1,6 +1,7 @@
 describe('calculator application', function() {
 
   it('multiplication test', function() {
+
     browser.get('http://juliemr.github.io/protractor-demo/');
 
     element(by.model('first')).sendKeys('20');
@@ -18,7 +19,7 @@ describe('calculator application', function() {
    expect(result.getText()).toEqual('100');
   });
 
-    it('division test', function() {
+    it('division Test', function() {
       browser.get('http://juliemr.github.io/protractor-demo/');
   
       element(by.model('first')).sendKeys('20');
@@ -32,6 +33,8 @@ describe('calculator application', function() {
 
      browser.sleep(5000);
       var result = element(by.tagName('h2'));
+
+
   
      expect(result.getText()).toEqual('4');
     });
